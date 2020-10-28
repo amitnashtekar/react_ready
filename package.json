@@ -1,0 +1,40 @@
+{
+  "name": "react_ready",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server  --config webpack.development.js --open",
+    "prod": "webpack --config webpack.production.js",
+    "startup": "webpack-dev-server --hot --config webpack.shared.js --open",
+    "produp": "webpack --config webpack.shared.js --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amitnashtekar/react_ready.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amitnashtekar/react_ready/issues"
+  },
+  "homepage": "https://github.com/amitnashtekar/react_ready#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.2.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
