@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <img src={spiderImg} />
-      <h1>Hi All...!</h1>
+      <h1>Hi All...hot reload!</h1>
     </>
   );
 };

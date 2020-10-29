@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server  --config webpack.development.js --open",
+    "start": "webpack-dev-server  --hot --config webpack.development.js --open",
     "prod": "webpack --config webpack.production.js",
     "startup": "webpack-dev-server --hot --config webpack.shared.js --open",
     "produp": "webpack --config webpack.shared.js --mode production"
@@ -36,6 +36,7 @@
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.2.0"
   }
 }

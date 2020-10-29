@@ -12,6 +12,9 @@ module.exports = {
     filename: "bundle.[hash].js",
     path: path.resolve(__dirname, "dist"),
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   plugins: [
     new webpack.DefinePlugin({
       "process.env": dotenv.parsed,
