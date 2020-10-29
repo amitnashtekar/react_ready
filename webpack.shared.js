@@ -1,6 +1,10 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const webpack = require("webpack");
 const path = require("path");
+const dotenv = require("dotenv").config({
+  path: path.join(__dirname, ".env"),
+});
 
 module.exports = {
   entry: "./src/index.js",
@@ -9,6 +13,9 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
   },
   plugins: [
+    new webpack.DefinePlugin({
+      "process.env": dotenv.parsed,
+    }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: "Clothy",
