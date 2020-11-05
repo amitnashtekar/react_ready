@@ -1,0 +1,16 @@
+{
+	"extends": ["prettier"],
+	"env": {
+		"browser": true,
+		"jest": true,
+		"es6": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module",
+		"ecmaFeatures": { "jsx": true }
+	},
+	"rules": {
+		"semi": "error"
+	}
+}
